@@ -38,6 +38,7 @@ rustdoc-args = ["--cfg", "docsrs"]
 default = []
 verify = ["ring"]
 validate = []
+wasm = ["ring/wasm32_unknown_unknown_js"]
 
 [dependencies]
 asn1-rs = { version = "0.5", features=["datetime"] }
