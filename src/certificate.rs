@@ -502,6 +502,12 @@ impl<'a> TbsCertificate<'a> {
     pub fn raw_serial_as_string(&self) -> String {
         format_serial(self.raw_serial)
     }
+
+     /// Get the raw bytes of the certificate
+    pub fn raw(&self) -> &'a [u8] {
+        self.raw
+    }
+
 }
 
 /// Searches for an extension with the given `Oid`.
